@@ -1,0 +1,55 @@
+.MenuView {
+  width: 100%;
+  position: fixed;
+  top: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  transition: background-color 0.5s ease, position 0.3s ease;
+  padding: 10px 0 ;
+  margin: 20px auto 0;
+  z-index: 15;
+
+  .link-wrapper {
+    display: flex;
+    align-items: center;
+    width: 800px;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 16px;
+    margin: 0 auto;
+
+    .page__link {
+      margin-top: 4px;
+      cursor: pointer;
+    }
+    &.scrolled {
+      position: fixed;
+      top: 0;
+      background-color: rgba(7, 0, 0, 0.3);
+      border-radius: 20px;
+      padding: 10px 20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .logo {
+    width: 150px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+
+    img {
+      display: block;
+      width: 70px;
+      height: 64px;
+    }
+
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+  }
+}

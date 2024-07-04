@@ -1,0 +1,82 @@
+.OurValuesPage{
+  margin-top: 600px;
+  min-height: 400px;
+  padding-top: 80px;
+  .our-values-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .values-title{
+    color: #ffffff;
+    font-size: 54px;
+    font-weight: 600;
+  }
+  .values-subtitle{
+    font-size: 24px;
+    color: #ffffff;
+  }
+  .values-item-wrapper{
+    margin-top: 50px;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    vertical-align: center;
+
+  }
+  .values-item-block{
+    width: 250px;
+    margin-top: 50px;
+  }
+  .values-icon{
+    position: relative;
+    width: 34px;
+    height: 34px;
+    border-radius: 4px;
+    transform: rotate(45deg);
+    background-color: #050505;
+    vertical-align: center;
+    text-align: center;
+    img{
+      position: absolute;
+      width: 75%;
+      display: block;
+      transform: rotate(-45deg);
+      text-align: center;
+      top:4px;
+      left:4px;
+    }
+  }
+  .values-check-icon{
+    background-color: #BBDEFB;
+  }
+  .values-location-icon{
+    background-color: #B2EBF2;
+  }
+  .values-speed-icon{
+
+    img{
+      top: 6px;
+    }
+    background-color: #EDE7F6;
+  }
+  .values-light-icon{
+    background-color: #FBEABB;
+  }
+  .values-item-title{
+    margin-top: 10px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 28px
+  }
+  .values-item-subtitle{
+    margin-top: 5px;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 18px ;
+  }
+}
