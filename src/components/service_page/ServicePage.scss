@@ -13,11 +13,12 @@
   .service-wrapper{
     margin-top: 30px;
     padding-bottom: 50px;
-    display: flex;
     width: 100%;
-    justify-content: space-between;
-    flex-direction: row;
+    display: flex;
     flex-wrap: wrap;
+   
+    justify-content: space-between;
+   
   }
   .service-block{
     width: 365px ;
@@ -66,7 +67,40 @@
     margin-top: 30px;
     justify-content: space-between;
   }
-  .item-image{
-
+  
+}
+.virtual{
+  width: 100%;
+  height: auto;
+  display: flex;
+  background-color: #2196F3;
+  border-radius: 50px;
+  margin-top: 40px;
+ 
+  .virtual-text{
+    width: 420px;
+    height: auto;
+    text-align: center;
+    padding-left: 10px;
+    margin-left: 20px;
+    h1{
+      color: white;
+      font-weight: 600;
+      letter-spacing: 2px;
+      
+    }
+    p{
+      color: white;
+      font-weight: 400;
+      font-size: 28px;
+      text-align: start;
+      word-spacing: 14px;
+      line-height: 33px;
+      margin-top: 30px;
+    }
+  }
+  img{
+    width: 900px;
+    height: 470px;
   }
 }

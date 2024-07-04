@@ -4,6 +4,7 @@ import location_icon from '../../assets/img/location_icon.png'
 import speed_time_icon from '../../assets/img/speed_time_icon.png'
 import light_icon from '../../assets/img/light_icon.png'
 
+
 import './OurValuesPage.scss'
 
 const OurValuesPage = () => {
@@ -48,6 +49,7 @@ const OurValuesPage = () => {
                             <div className="values-item-subtitle">We solve any problem with creativity.</div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
