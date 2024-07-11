@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { motion } from "framer-motion";
 import mask from '../../assets/img/Mask.png';
 import rocket from '../../assets/img/rocket_banner.png';
@@ -27,6 +28,25 @@ const phrases = [
 const MainPage = () => {
     return (
         <div className="MainPage">
+            <Helmet>
+                <title>Etamin - IT Solutions</title>
+                <meta name="description" content="Etamin: Where imagination meets innovation. Discover how we transform ideas into reality with our cutting-edge IT solutions." />
+                <meta name="keywords" content="Etamin, IT solutions, innovation, creativity, technology, AR/VR, AI, web applications, mobile applications, Uzbekistan, Tashkent" />
+
+                {/* Open Graph Meta Tags */}
+                <meta property="og:title" content="Etamin - IT Solutions" />
+                <meta property="og:description" content="Etamin: Where imagination meets innovation. Discover how we transform ideas into reality with our cutting-edge IT solutions." />
+                <meta property="og:image" content="%PUBLIC_URL%/og-image.png" />
+                <meta property="og:url" content="https://www.etamin.agency" />
+                <meta property="og:type" content="website" />
+
+                {/* Twitter Card Meta Tags */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Etamin - IT Solutions" />
+                <meta name="twitter:description" content="Etamin: Where imagination meets innovation. Discover how we transform ideas into reality with our cutting-edge IT solutions." />
+                <meta name="twitter:image" content="%PUBLIC_URL%/twitter-image.png" />
+            </Helmet>
+
             <motion.div
                 whileInView={{ x: [-200, 0], y: [0, -100], opacity: [0, 1] }}
                 transition={{ duration: 0.3 }}
@@ -38,7 +58,7 @@ const MainPage = () => {
 
             <div className="main-wrapper">
                 <div className="main-item">
-                    <h1>Etamin- IT Solutions</h1>
+                    <h1>Etamin - IT Solutions</h1>
                     <div className="main-subtitle">
                         <TypingEffect
                             texts={phrases}

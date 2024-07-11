@@ -14,11 +14,10 @@
 .ServicePage .service-wrapper {
   margin-top: 30px;
   padding-bottom: 50px;
-  display: flex;
   width: 100%;
-  justify-content: space-between;
-  flex-direction: row;
+  display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .ServicePage .service-block {
   width: 365px;
@@ -66,6 +65,39 @@
   display: flex;
   margin-top: 30px;
   justify-content: space-between;
+}
+
+.virtual {
+  width: 100%;
+  height: auto;
+  display: flex;
+  border-radius: 50px;
+  margin-top: 40px;
+}
+.virtual .virtual-text {
+  width: 420px;
+  height: auto;
+  text-align: center;
+  padding-left: 10px;
+  margin-left: 20px;
+}
+.virtual .virtual-text h1 {
+  color: white;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.virtual .virtual-text p {
+  color: white;
+  font-weight: 400;
+  font-size: 28px;
+  text-align: start;
+  word-spacing: 14px;
+  line-height: 33px;
+  margin-top: 30px;
+}
+.virtual img {
+  width: 900px;
+  height: 470px;
 }
 
 /*# sourceMappingURL=ServicePage.css.map */

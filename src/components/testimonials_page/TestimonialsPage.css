@@ -45,16 +45,13 @@
   color: rgb(187, 222, 251);
 }
 .TestimonialsPage .testimonials-items-wrapper {
-  width: 900px;
+  width: 60%;
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: space-evenly;
   margin-left: 120px;
   margin-top: 50px;
-}
-.TestimonialsPage .item-block {
-  z-index: 15;
+  z-index: 14;
+  padding-left: 40px;
 }
 .TestimonialsPage .item-block-wrapper {
   width: 200px;
@@ -81,6 +78,7 @@
 .TestimonialsPage .client-item-block {
   display: flex;
   margin-top: 25px;
+  width: 300px;
 }
 .TestimonialsPage .client-item-block img {
   width: 50px;
