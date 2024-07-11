@@ -1,4 +1,5 @@
-import { Helmet } from 'react-helmet-async';
+import React from 'react';
+import { Helmet } from 'react-helmet';
 import { motion } from "framer-motion";
 import mask from '../../assets/img/Mask.png';
 import rocket from '../../assets/img/rocket_banner.png';
