@@ -1,0 +1,99 @@
+.contact{
+  width: 100%;
+  height: 794px;
+  background-color: #D6EBFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+  .contact-title{
+    width:318px;
+    height:144px;
+    text-align: center;
+    h1{
+      font-weight: 400;
+      font-size: 46px;
+    }
+    p{
+      font-weight: 700;
+      font-size: 16px;
+      margin-top: 17px;
+    }
+  }
+  .contact-group{
+    width: 770px;
+    height: 430px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+
+    .contact-us{
+      width: 410px;
+      height: 470px;
+      background-color: #FFFFFF;
+      border-radius: 10px;
+      padding-top: 26px;
+      padding-left: 35px;
+      padding-right: 35px;
+      padding-bottom: 26px;
+      box-sizing: border-box;
+      p{
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+      }
+     
+      input{
+        width: 318px;
+        height: 35px;
+        border-radius: 25px;
+        border: none;
+        background-color: #F5F5F5;
+        padding-left: 20px;
+        margin-top: 31px;
+
+      }
+      textarea{
+        width: 310px;
+        height: 126px;
+        padding: 15px;
+        background-color: #F5F5F5;
+        border: none;
+        margin-top: 31px;
+      }
+      button{
+        width: 94px;
+        height: 34px;
+        border-radius: 22px;
+        background-color: #EF2779;
+        color: white;
+        border: none;
+        margin-top: 31px;
+      }
+      
+    }
+
+    .contact-address{
+      width:280px;
+      height:262px;
+
+      .contact-items{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 20px;
+        p{
+          font-size: 13px;
+          font-weight: 700;
+        }
+        
+      }
+      .contact-social{
+        margin-top: 20px;
+      }
+    }
+  }
+}

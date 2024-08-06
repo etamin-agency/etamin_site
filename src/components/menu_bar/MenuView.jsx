@@ -1,44 +1,44 @@
 import React, {useState, useEffect} from 'react';
 import {Link} from 'react-scroll';
 import './MenuView.scss';
-import logo from '../../assets/img/Logo.png';
+import logo from "../../assets/img/icon.png"
 
 const MenuView = () => {
-    const [isScrolled, setIsScrolled] = useState(false);
+    // const [isScrolled, setIsScrolled] = useState(false);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 30) {
-                setIsScrolled(true);
-            } else {
-                setIsScrolled(false);
-            }
-        };
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         if (window.scrollY > 30) {
+    //             setIsScrolled(true);
+    //         } else {
+    //             setIsScrolled(false);
+    //         }
+    //     };
 
-        window.addEventListener('scroll', handleScroll);
+    //     window.addEventListener('scroll', handleScroll);
 
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
+    //     return () => {
+    //         window.removeEventListener('scroll', handleScroll);
+    //     };
+    // }, []);
 
     return (
         <div className='MenuView'>
-            <div className={`link-wrapper ${isScrolled ? 'scrolled' : ''}`}>
-
-                <Link to="home" smooth={true} duration={500}>
-                    <div className="logo">
-
-                        <img src={logo} alt="etamin logo"/>Etamin
-
+           
+                <div className='menu-right'>
+                <img src={logo} alt='logo'/>
+                    <Link to="home"  smooth={true} duration={500} className="page__link">Home</Link>
+                    <Link to="service" smooth={true} duration={500} className="page__link">Product</Link>
+                    <Link to="about_page" smooth={true} duration={500} className="page__link">Pricing</Link>
+                    <Link to="testimonial" smooth={true} duration={500} className="page__link">About</Link>
+                    <Link to="values" smooth={true} duration={500} className="page__link">Contact</Link>
+                    <div className='right-group'>
+                        <input type='text'  placeholder='Your Email'/>
+                        <button className='menu-button'>Contact Us</button>
                     </div>
-                </Link>
-                <Link to="service" smooth={true} duration={500} className="page__link">Services</Link>
-                <Link to="about_page" smooth={true} duration={500} className="page__link">About Us</Link>
-                <Link to="testimonial" smooth={true} duration={500} className="page__link">Testimonials</Link>
-                <Link to="values" smooth={true} duration={500} className="page__link">Our Values</Link>
-                <Link to="partners" smooth={true} duration={500} className="page__link">Partners</Link>
-            </div>
+                </div>
+                
+           
         </div>
     );
 }
