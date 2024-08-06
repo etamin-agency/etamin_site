@@ -1,0 +1,106 @@
+.ServicePage{
+  min-height: 125px;
+  padding-top: 30px;
+  margin: 0 auto;
+  .service-title{
+    display: block;
+    margin: 0 auto;
+    color: rgba(187, 222, 251, 1);
+    font-size: 60px;
+    text-align: center;
+    font-weight: 600;
+  }
+  .service-wrapper{
+    margin-top: 30px;
+    padding-bottom: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+   
+    justify-content: space-between;
+   
+  }
+  .service-block{
+    width: 365px ;
+    height: 230px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    margin: 50px auto 0;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    cursor: pointer;
+  }
+  .block-img{
+    position: relative;
+    width: 110px;
+    height: 110px;
+    padding: 30px;
+    margin: 0 auto;
+    background-color: rgba(13, 21, 52, 0.25);
+    border-radius: 100%;
+    img{
+      position: absolute;
+      width: 90px;
+      height: 90px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+  .block-text{
+    margin-top: 20px;
+    font-size: 24px;
+    color: #ffffff;
+  }
+
+}
+.ServiceBlock{
+  width: 100%;
+  .service-item-image{
+    display: block;
+    width: 500px;
+    margin-top: 40px;
+  }
+  .wrapper{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+  }
+  
+}
+.virtual{
+  width: 100%;
+  height: auto;
+  display: flex;
+  border-radius: 50px;
+  margin-top: 40px;
+ 
+  .virtual-text{
+    width: 420px;
+    height: auto;
+    text-align: center;
+    padding-left: 10px;
+    margin-left: 20px;
+    h1{
+      color: white;
+      font-weight: 600;
+      letter-spacing: 2px;
+      
+    }
+    p{
+      color: white;
+      font-weight: 400;
+      font-size: 28px;
+      text-align: start;
+      word-spacing: 14px;
+      line-height: 33px;
+      margin-top: 30px;
+    }
+  }
+  img{
+    width: 900px;
+    height: 470px;
+  }
+}
+

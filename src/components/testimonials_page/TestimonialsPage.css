@@ -1,0 +1,103 @@
+.TestimonialsPage {
+  position: absolute;
+  height: 588px;
+  width: 100%;
+  left: 0;
+  background: linear-gradient(to right, #081C56, #42A5F5);
+  z-index: 12;
+}
+.TestimonialsPage .square-wrapper {
+  width: 100%;
+  position: relative;
+}
+.TestimonialsPage .blue-square {
+  position: absolute;
+  display: block;
+  width: 518px;
+  height: 516px;
+  border-radius: 40px;
+  background-color: #00BCD4;
+  right: 200px;
+  transform: rotate(45deg);
+  transform-origin: center;
+  z-index: 1;
+}
+.TestimonialsPage .black-square {
+  position: absolute;
+  display: block;
+  right: 0;
+  top: -150px;
+  z-index: 2;
+}
+.TestimonialsPage .service-image {
+  display: block;
+  position: absolute;
+  right: 80px;
+  top: 120px;
+  z-index: 13;
+  width: 500px;
+}
+.TestimonialsPage .testimonials-title {
+  text-align: left;
+  font-size: 60px;
+  margin: 20px auto 0 130px;
+  font-weight: 600;
+  color: rgb(187, 222, 251);
+}
+.TestimonialsPage .testimonials-items-wrapper {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 120px;
+  margin-top: 50px;
+  z-index: 14;
+  padding-left: 40px;
+}
+.TestimonialsPage .item-block-wrapper {
+  width: 200px;
+  background-color: #303030;
+  padding: 30px;
+  border-radius: 40px 40px 40px 0px;
+  border: 1px white solid;
+  box-shadow: 0 60px 80px rgba(0, 0, 0, 0.6), 0 45px 26px rgba(0, 0, 0, 0.14);
+}
+.TestimonialsPage .item-block-wrapper .item-block-text {
+  color: #ecdede;
+  font-size: 16px;
+  font-weight: 600;
+}
+.TestimonialsPage .stars {
+  margin-top: 35px;
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+}
+.TestimonialsPage .stars img {
+  width: 25px;
+}
+.TestimonialsPage .client-item-block {
+  display: flex;
+  margin-top: 25px;
+  width: 300px;
+}
+.TestimonialsPage .client-item-block img {
+  width: 50px;
+  border-radius: 100%;
+}
+.TestimonialsPage .client-data {
+  margin-left: 15px;
+  margin-top: 5px;
+}
+.TestimonialsPage .client-data .client-name {
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+}
+.TestimonialsPage .client-data .client-position {
+  color: white;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=TestimonialsPage.css.map */
+
