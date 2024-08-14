@@ -20,19 +20,24 @@ const resources = {
 
 i18n
   .use(Backend) // Optional: load translations using http (default public/assets/locals)
-  .use(LanguageDetector) // Use the language detector
+  .use(
+    
+  ) // Use the language detector
   .use(initReactI18next) // Bind i18n to react-i18next
   .init({
     resources,
     fallbackLng: 'en', // Default language if the detected language is not available
     detection: {
-      // Language detection options
       order: ['querystring', 'cookie', 'localStorage', 'navigator', 'htmlTag', 'path', 'subdomain'],
-      caches: ['localStorage', 'cookie'], // Cache user language in cookies or localStorage
+      caches: ['localStorage', 'cookie'], // Where the language should be cached
     },
     interpolation: {
       escapeValue: false // React already escapes values to prevent XSS
     }
   });
+  i18n.on('languageChanged', (lng) => {
+    console.log('Language changed to:', lng);
+  });
+  
 
 export default i18n;
