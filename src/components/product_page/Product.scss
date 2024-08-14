@@ -4,7 +4,8 @@
 
 .ProductBlock{
   min-height: 125px;
-  height: 610px;
+  height: auto;
+  
   display: flex;
   flex-direction: column;
   background-color: #27173A;
@@ -18,246 +19,212 @@
     background-color: #27173A;
     
     text-align: center;
-    color: white;
+    color: rgb(255, 254, 254);
     font-family: Roboto;
     margin: 0;
 
     h2{
       font-weight: 700;
       font-size: 22px;
-      text-shadow: -2px 0px 30px rgb(178, 98, 231);
+      text-shadow: -2px 0px 30px rgb(201, 125, 252);
       
     }
     h1{
       font-weight: 400;
       font-size: 46px;
       margin-top: 7px;
-      text-shadow: -2px 0px 30px rgb(179, 84, 246);
+      text-shadow: -2px 0px 30px rgb(188, 115, 240);
       
     }
     
   }
   .Product-items{
     width: 100%;
-    height: 500px;
+    height: 600px;
     display: flex;
-    
+    align-items: center;
+    gap: 100px;
+    overflow-x: scroll;
     color: white;
+    padding-left: 40px;
+    &::-webkit-scrollbar {
+      height: 10px;
+    }
+  
+    &::-webkit-scrollbar-track {
+      background: #27173A;
+      border-radius: 5px;
+      
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background: #733C9B;
+    
+    }
+  
+    // For Firefox
+    scrollbar-width: thin;
+    scrollbar-color: #733C9B #301b4a;
+    
+    
+    
     
 
-    .Product-item1{
+    .product-item {
       position: relative;
-      width: 289px;
-      max-width:289px;
-      height: 342px;
+      width: 350px;
+      min-width: 350px;
+      height: 400px;
       margin-top: 50px;
-      
-      box-shadow: #733C9B 0px 2px 40px 1px, #733C9B 0px 2px 16px 0px;
       border-radius: 20px;
       display: flex;
       justify-content: end;
-      align-items: end;
-      background: url('../../assets/img/servic/slide1.png') no-repeat center center; /* Replace with your image path */
-      background-size: cover;
-      
-    }
-    .Product-item2{
-      position: relative;
-      width: 289px;
-      max-width:289px;
-      height: 342px;
-      box-shadow: #733C9B 0px 2px 40px 10px, #733C9B 0px 2px 16px 0px;
-      border-radius: 20px;
-      margin-top: 50px;
-     
-      display: flex;
       align-items: end;
       overflow: hidden;
-      background: url('../../assets/img/servic/slide2.png') no-repeat center center; /* Replace with your image path */
-      background-size: cover;
-      
+      border: solid 1px rgb(190, 190, 190);
+      box-shadow: #733C9B 0px 2px 10px 1px, #733C9B 0px 2px 16px 0px;
+      transition: background-color 1s; /* Smooth background transition */
     }
-    .Product-item3{
-      position: relative;
-      width: 289px;
-      max-width:289px;
-      height: 342px;
-      box-shadow: #733C9B 0px 2px 40px 1px, #733C9B 0px 2px 16px 0px;
+    
+    
+    .product-item img.product-image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensure the image covers the container */
+      transition: opacity 1s; /* Smooth opacity transition */
+      z-index: -1; /* Ensure image is behind content and overlay */
+    }
+    .overlay {
+      width: 350px;
+      max-width:350px;
       border-radius: 20px;
-      margin-top: 50px;
-      
-      display: flex;
-      align-items: end;
-      overflow: hidden;
-      background: url('../../assets/img/servic/slide3.png') no-repeat center center; /* Replace with your image path */
-      background-size: cover;
-      
+      height: 400px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: #af69ff;
+      z-index: 1;
     }
-    .Product-item4{
-      position: relative;
-      width: 289px;
-      max-width:289px;
-      height: 342px;
-      box-shadow: #733C9B 0px 2px 40px 1px, #733C9B 0px 2px 16px 0px;
-      border-radius: 20px;
-      margin-top: 50px;
-      
-      display: flex;
-      align-items: end;
-      overflow: hidden;
-      background: url('../../assets/img/servic/slide4.png') no-repeat center center; /* Replace with your image path */
-      background-size: cover;
-      
+    .product-item:hover .overlay{
+      opacity: 0;
     }
-    .Product-item5{
-      position: relative;
-      width: 289px;
-      max-width:289px;
-      height: 342px;
-      margin-top: 50px;
-      
-      box-shadow: #733C9B 0px 2px 40px 1px, #733C9B 0px 2px 16px 0px;
-      border-radius: 20px;
-      display: flex;
-      justify-content: end;
-      align-items: end;
-      background: url('../../assets/img/servic/slide5.png') no-repeat center center; /* Replace with your image path */
-      background-size: cover;
+    .product-item .dark-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3); /* Semi-transparent black overlay */
+      opacity: 0.1;
+      transition: opacity 0.3s; /* Smooth opacity transition */
+      z-index: 1; /* Positioned above the image */
     }
-    .Product-item6{
-      position: relative;
-      width: 289px;
-      max-width:289px;
-      height: 342px;
-      margin-top: 50px;
-      
-      box-shadow: #733C9B 0px 2px 40px 1px, #733C9B 0px 2px 16px 0px;
-      border-radius: 20px;
-      display: flex;
-      justify-content: end;
-      align-items: end;
-      background: url('../../assets/img/servic/slide6.png') no-repeat center center; /* Replace with your image path */
-      background-size: cover;
+    
+    .product-item:hover .dark-overlay {
+      opacity: 1; /* Darken the image on hover */
     }
-    .Product-item7{
-      position: relative;
-      width: 289px;
-      max-width:289px;
-      height: 342px;
-      margin-top: 50px;
-      
-      box-shadow: #733C9B 0px 2px 40px 1px, #733C9B 0px 2px 16px 0px;
-      border-radius: 20px;
-      display: flex;
-      justify-content: end;
-      align-items: end;
-      background: url('../../assets/img/servic/slide7.png') no-repeat center center; /* Replace with your image path */
-      background-size: cover;
+    
+    .product-item:hover img.product-image {
+       /* Make image semi-transparent on hover */
+      z-index: 1;
     }
-    .Product-item8{
+    
+    .content {
       position: relative;
-      width: 289px;
-      max-width:289px;
-      height: 342px;
-      margin-top: 50px;
-      
-      box-shadow: #733C9B 0px 2px 40px 1px, #733C9B 0px 2px 16px 0px;
-      border-radius: 20px;
-      display: flex;
-      justify-content: end;
-      align-items: end;
-      background: url('../../assets/img/servic/slide8.png') no-repeat center center; /* Replace with your image path */
-      background-size: cover;
-    }
-    .Product-item9{
-      position: relative;
-      width: 289px;
-      max-width:289px;
-      height: 342px;
-      margin-top: 50px;
-     
-      box-shadow: #733C9B 0px 2px 40px 1px, #733C9B 0px 2px 16px 0px;
-      border-radius: 20px;
-      display: flex;
-      justify-content: end;
-      align-items: end;
-      background: url('../../assets/img/servic/slide9.png') no-repeat center center; /* Replace with your image path */
-      background-size: cover;
-    }
-    .Product-item10{
-      position: relative;
-      width: 289px;
-      max-width:289px;
-      height: 342px;
-      margin-top: 50px;
-      
-      box-shadow: #733C9B 0px 2px 40px 1px, #733C9B 0px 2px 16px 0px;
-      border-radius: 20px;
-      display: flex;
-      justify-content: end;
-      align-items: end;
-      background: url('../../assets/img/servic/slide10.png') no-repeat center center; /* Replace with your image path */
-      background-size: cover;
-    }
-    .Product-item11{
-      position: relative;
-      width: 289px;
-      max-width:289px;
-      height: 342px;
-      margin-top: 50px;
-      
-      box-shadow: #733C9B 0px 2px 40px 1px, #733C9B 0px 2px 16px 0px;
-      border-radius: 20px;
-      display: flex;
-      justify-content: end;
-      align-items: end;
-      background: url('../../assets/img/servic/slide11.png') no-repeat center center; /* Replace with your image path */
-      background-size: cover;
-    }
-  }
-  .overlay {
-    width: 289px;
-    max-width:289px;
-    border-radius: 20px;
-    height: 342px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(39, 23, 58, 1)), rgba(39, 23, 58, 0.5);
-    z-index: 1;
-  }
-  
-  .content {
-      position: relative;
-      padding: 10px;
-      height: 50%;
-      color: white;
+      padding: 25px;
+      height: 100%;
+      width: 100%;
+      color: rgb(255, 255, 255); /* Default text color */
       display: flex;
       flex-direction: column;
-      justify-content: end;
-      align-items: end;
-      margin-top: 160px;
+      justify-content: space-between; /* Center text vertically */
+      align-items: start; /* Align text to the start */
       text-align: start;
-      font-family: Source Sans 3;
-      z-index: 2;
-      
-      h2 {
-        margin: 0;
-        font-size: 20px;
-        font-size: 20px;
-        font-weight: 800;
-        line-height: 20px;
-      }
-      
-      p {
-          line-height: 13px;
-          font-size: 13px;
-          margin-bottom: 20px;
-          margin-top: 9px;
-      }
+      box-sizing: border-box;
+      font-family: 'Source Sans 3', sans-serif;
+      z-index: 2; /* Ensure content is above overlay */
+      transition: color 1s; /* Smooth color transition */
+    }
+    
+    .product-item:hover .content {
+      color: white; /* Change text color to white on hover */
+    }
+    
+    .content h2 {
+      margin: 0;
+      font-size: 27px;
+      font-weight: 600;
+      line-height: 30px;
+      transform: translateY(-100px); /* Default position */
+      transition: transform 0.5s; /* Smooth transform transition */
+    }
+    
+    .content h3 {
+      margin: 0;
+      font-size: 27px;
+      font-weight: 600;
+      line-height: 30px;
+      transform: translateY(-100px); /* Default position */
+      transition: transform 1s; /* Smooth transform transition */
+    }
+    
+    .product-item:hover .content h3 {
+      transform: translateX(100px); /* Move horizontally on hover */
+      opacity: 0; /* Fade out on hover */
+    }
+    
+    .content p {
+      line-height: 20px;
+      font-size: 15px;
+      margin: 0; /* Remove default margins for smooth animation */
+      transform: translateY(0); /* Default position */
+      transition: transform 1s; /* Smooth transform transition */
+    }
+    
+    .product-item:hover .content h2 {
+      transform: translateY(0); /* Move up on hover */
+    }
+    
+    .product-item:hover .content p {
+      transform: translateY(200px); /* Move down on hover */
+    }
+    
   }
+  
+  
+  // .content {
+      
+  //     padding: 10px;
+  //     height: 50%;
+  //     width: 100%;
+  //     color: white;
+  //     display: flex;
+  //     flex-direction: column;
+  //     justify-content: end;
+  //     align-items: end;
+  //     margin-top: 160px;
+  //     text-align: start;
+  //     font-family: Source Sans 3;
+  //     z-index: 2;
+      
+  //     h2 {
+  //       margin: 0;
+  //       font-size: 20px;
+  //       font-size: 20px;
+  //       font-weight: 800;
+  //       line-height: 20px;
+  //     }
+      
+  //     p {
+  //         line-height: 13px;
+  //         font-size: 13px;
+  //         margin-bottom: 20px;
+  //         margin-top: 9px;
+  //     }
+  // }
  
 
 }

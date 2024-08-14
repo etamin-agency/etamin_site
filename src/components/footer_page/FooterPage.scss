@@ -1,54 +1,108 @@
 .FooterPage {
   width: 100%;
-  height: 507px;
+  height: auto;
+  margin-top: 100px;
   padding-bottom: 100px;
   display: flex;
   justify-content: center;
-  gap: 55px;
+  gap: 75px;
   align-items: center;
+  background-color: #27173A;
 
-  .footer-pages{
+  .yandex {
+    margin-bottom: -20px;
+  }
+
+  .footer-pages {
     width: 186px;
     height: 267px;
     color: white;
+    display: flex ;
+    flex-direction: column;
+    gap: 20px;
 
-    h2{
-      font-size: 22px;
+    h2 {
+      font-size: 24px;
       font-weight: 700;
       margin-top: 10px;
       margin-bottom: 10px;
-
     }
-    p{
+
+    p {
       font-size: 15px;
       font-weight: 400;
-      margin-top: 20px;
+      margin-top: 25px;
+      color: rgb(212, 212, 212);
     }
   }
-  .footer-map{
+
+  .footer-map {
     width: 470px;
     height: 247px;
-    
   }
 
-  .contact-address{
-    width:280px;
-    height:262px;
+  .contact-address {
+    width: 400px;
+    height: 262px;
     color: white;
-    .contact-items{
+    margin-top: 30px;
+
+    .contact-items {
       display: flex;
       align-items: center;
       gap: 20px;
-      margin-bottom: 20px;
-      p{
-        font-size: 13px;
+      margin-bottom: 15px;
+
+      p {
+        font-size: 12px;
         font-weight: 700;
       }
-      
     }
-    .contact-social{
-      margin-top: 20px;
+
+    .footer-link-wrapper {
+      margin-top: 40px;
+
+      a {
+        margin-right: 15px; /* Add spacing between social media icons */
+      }
     }
   }
-  
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 20px; /* Add some gap between the elements */
+
+    .footer-pages,
+    .contact-address {
+      text-align: center; /* Center align the text in smaller screens */
+      width: 100%; /* Make them take full width */
+      margin-top: 20px;
+    }
+
+    .yandex {
+      width: 100%;
+      height: auto;
+      margin: 20px 0; /* Add some margin to separate map from other content */
+    }
+
+    .footer-pages {
+      p {
+        margin-top: 15px; /* Adjust spacing for smaller screens */
+      }
+    }
+
+    .contact-address {
+      margin-top: 10px;
+
+      .contact-items {
+        justify-content: center; /* Center contact items */
+      }
+
+      .footer-link-wrapper {
+        display: flex;
+        justify-content: center; /* Center the social media icons */
+        margin-top: 20px;
+      }
+    }
+  }
 }

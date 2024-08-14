@@ -301,4 +301,34 @@
   top: 0;
   animation: smoothShake 10s infinite, moveFromBottom 5s;
 }
-
+@media (max-width: 768px){
+  .rocket{
+    display: none;
+  }
+  .main-child h2 {
+    display: inline;
+    font-weight: 900;
+    font-size: 45px;
+    font-family: Roboto;
+    color: #733C9B;
+    margin: 0;
+  }
+  
+  .main-child p {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: end;
+    font-family: Roboto;
+    margin-bottom: -10px;
+  }
+  .main-child h1 {
+    font-weight: 700;
+    font-size: 45px;
+    font-family: Source Sans 3;
+    text-align: end;
+    line-height: 60px;
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+}

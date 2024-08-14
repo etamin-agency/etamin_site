@@ -1,0 +1,103 @@
+.SolutionPage{
+  width: 100%;
+  height: 500px;
+ background-color: #27173A;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-align: center;
+ 
+  .Solution-text{
+   margin-bottom: 10px;
+   h2{
+     font-weight: 700;
+     font-size: 22px;
+     text-shadow: -2px 0px 30px rgb(178, 98, 231);
+     
+   }
+   h1{
+     font-weight: 400;
+     font-size: 46px;
+     margin-top: 7px;
+     text-shadow: -2px 0px 30px rgb(179, 84, 246);
+     
+   }
+  
+   
+   
+  }
+  .Solution-item {
+   width: 90%;
+   height: 305px;
+   display: flex;
+   justify-content: flex-start; // Changed from space-evenly
+   align-items: center;
+   overflow-x: auto;
+   padding: 5px 10px; // Add some padding
+ 
+   // Custom scrollbar styles for WebKit browsers (Chrome, Safari, newer versions of Edge)
+   &::-webkit-scrollbar {
+     height: 10px;
+   }
+ 
+   &::-webkit-scrollbar-track {
+     background: #27173A;
+     border-radius: 5px;
+     
+   }
+ 
+   &::-webkit-scrollbar-thumb {
+     background: #733C9B;
+   
+   }
+ 
+   // For Firefox
+   scrollbar-width: thin;
+   scrollbar-color: #733C9B #301b4a;
+   
+ 
+   .Solution-items {
+     flex: 0 0 auto; // Prevent items from shrinking
+     max-width: 250px;
+     width: 250px;
+     height: auto;
+     margin-right: 20px; // Add space between items
+     
+     img {
+       width: 100px;
+       height: 100px;
+       margin: auto;
+       display: block; // Center the image
+     }
+     
+     p {
+       font-size: 16px;
+       text-align: center;
+       color: white; // Ensure text is visible on dark background
+     }
+   }
+ }
+ 
+ @media (max-width: 768px){
+  .Solution-text{
+    margin-bottom: 10px;
+    h2{
+      font-weight: 700;
+      font-size: 18px;
+      text-shadow: -2px 0px 30px rgb(178, 98, 231);
+      margin-top: 10px;
+      
+    }
+    h1{
+      font-weight: 400;
+      font-size: 36px;
+      margin-top: 7px;
+      text-shadow: -2px 0px 30px rgb(179, 84, 246);
+      
+    }
+ }
+ }
+}
+ 

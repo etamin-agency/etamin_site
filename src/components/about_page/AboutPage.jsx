@@ -1,93 +1,28 @@
-import React, { useState, useEffect } from 'react';
-import Slider from 'react-slick';
-import mack from '../../assets/img/mack.png';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import './AboutPage.scss'
 
-import Search from '../../assets/img/about/Search.png'
-import Branding from '../../assets/img/about/Branding.png'
-import Cloud from '../../assets/img/about/Search.png'
-import Content from '../../assets/img/about/Content.png'
-import Data from '../../assets/img/about/Data.png'
-import Design from '../../assets/img/about/Design.png'
-import Digital from '../../assets/img/about/Digital.png'
-import Email from '../../assets/img/about/Email.png'
-import Media from '../../assets/img/about/Media.png'
+import Squid_img from "../../assets/img/oktopus.png"
 
-import './AboutPage.scss';
+const Solution = () => {
 
-const AboutPage = () => {
-    // var settings = {
-    //     infinite: true,
-    //     slidesToShow: 5,
-    //     slidesToScroll: 1,
-    //     autoplay: true,
-    //     autoplaySpeed: 1000, 
-    //     arrows: false,
-        
-    // };
-
-    return (
+    return(
         <div className="AboutPage">
-           <div className='About-text'>
-                <h1>How we can help you ?</h1>
-                <h2>
-                Using powerful, industry-specific software solutions, our team can help you achieve your business goals. 
-                </h2>
-           </div>
-          
-           <div className='About-item'>
-                <div className='About-items'>
-                    <img src={Search} alt=''/>
-                    <p>SEO and Search Engine Optimization</p>
-                    
+            <div className='About-text'>
+                <h1>ABOUT US</h1>
+                <p>We build robust digital solutions across industries with a highly creative and<br/>
+                dedicated team of professionals.</p>
+            </div>
+            <div className='About-wrapper'>
+                <div className='About-wrapper-text'>
+                <h1>ETAMIN IT SOLUTIONS</h1>
+                    <p>
+                    Etamin IT Solutions is a leading IT company dedicated to delivering innovative technology solutions. Since our founding, we have been focused on addressing our clients' technological needs and enhancing business processes with top-quality services.</p>
+                    <p>Our mission is to provide effective and reliable solutions by leveraging the latest industry technologies and trends. Our team of experienced professionals is committed to a personalized approach to every project, ensuring the highest standards of service and excellence.</p>
+                    <p>At Etamin IT Solutions, we prioritize understanding your unique needs and delivering exceptional results. We invite you to learn more about us and look forward to collaborating with you to drive your business forward.</p>
                 </div>
-                <div className='About-items'>
-                    <img src={Media} alt=''/>
-                    <p>Content Creation and Marketing</p>
-                    
-                </div>
-                <div className='About-items'>
-                    <img src={Data} alt=''/>
-                    <p>Social Media Management</p>
-                    
-                </div>
-                <div className='About-items'>
-                    <img src={Design} alt=''/>
-                    <p>Data Analytics and Business Intelligence</p>
-                    
-                </div>
-                <div className='About-items'>
-                    <img src={Digital} alt=''/>
-                    <p>Digital Advertising and PPC Management</p>
-                    
-                </div>
-                <div className='About-items'>
-                    <img src={Content} alt=''/>
-                    <p>Email Marketing Campaigns</p>
-                    
-                </div>
-                <div className='About-items'>
-                    <img src={Email} alt=''/>
-                    <p>Branding and Graphic Design</p>
-                    
-                </div>
-                <div className='About-items'>
-                    <img src={Media} alt=''/>
-                    <p>UX/UI Design</p>
-                    
-                </div>
-                <div className='About-items'>
-                    <img src={Branding} alt=''/>
-                    <p>Cloud Solutions and Storage</p>
-                    
-                </div>
-           </div>
-           
-           
-          
+                <img src={Squid_img} alt='Squid'/>
+            </div>
         </div>
+        
     );
-};
-
-export default AboutPage;
+}
+export default Solution;

@@ -22,7 +22,7 @@ const contact = () => {
                     <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
                     <button>Send</button>
                 </div>
-                <div className='contact-address'>
+                {/* <div className='contact-address'>
                     <div className='contact-items'>
                         <img src={map} alt="logo"/>
                         <p>6386 Spring St undefined Anchorage, 
@@ -37,7 +37,7 @@ const contact = () => {
                         <p>willie.jennings@example.com</p>
                     </div>
                     <img src={social} className="contact-social" alt="logo"/>
-                </div>
+                </div> */}
             </div>
         </div>
     )
