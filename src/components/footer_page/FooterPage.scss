@@ -80,7 +80,7 @@
     }
 
     .yandex {
-      width: 100%;
+      width: 90%;
       height: auto;
       margin: 20px 0; /* Add some margin to separate map from other content */
     }
@@ -103,6 +103,13 @@
         justify-content: center; /* Center the social media icons */
         margin-top: 20px;
       }
+    }
+  }
+  @media (max-width: 480px){
+    .yandex {
+      width: 80%;
+      height: auto;
+      margin: 20px 0; /* Add some margin to separate map from other content */
     }
   }
 }

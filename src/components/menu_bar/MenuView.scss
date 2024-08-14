@@ -1,96 +1,4 @@
-// .MenuView {
-//   width: 100%;
-//   height: 156px;
-//   display: flex;
-//   justify-content: center;
-//   position: relative;
-//   align-items: center;
-//   z-index: 12;
 
-//   .menu-right{
-//     position: absolute;
-//     width: 70%;
-//     height: 64px;
-//     display: flex;
-//     border-radius: 20px;
-//     justify-content: space-around;
-//     align-items: center;
-//     transition: background-color 0.5s ease-in-out, position 0.3s ease-in-out;
-    
-//     font-weight: 400;
-//     font-size: 15px;
-//     color: white;
-//     h1{
-//       font-size: 40px;
-//     }
-//     &.scrolled {
-//       position: fixed;
-//       top: 0;
-//       background-color: rgba(9, 11, 12, 0.5);
-//       border-radius: 20px;
-//       margin-top: 20px;
-  
-//     }
-//     .right-group{
-//       display: flex;
-//       gap: 12px;
-//     }
-//     input{
-//       width: 233px;
-//       height: 52px;
-//       border-radius: 39px;
-//       border: none;
-//       padding-left: 30px;
-//       color: black;
-
-//     }
-//     .menu-button{
-//       width: 157px;
-//       height: 54px;
-//       color: #EF2779;
-//       background-color: white;
-//       border: none;
-//       border-radius: 35px;
-//       font-weight: 600;
-//       font-size: 16px;
-//     }
-    
-//   }
- 
-//   @media (max-width: 480px) {
-//     .menu-right {
-//         flex-direction: column;
-//         width: 100%;
-//         height: auto;
-//         padding: 10px;
-//         border-radius: 0;
-
-//         h1 {
-//             font-size: 24px;
-//             margin-bottom: 10px;
-//         }
-
-//         .page__link {
-//             font-size: 14px;
-//             margin: 5px 0;
-//             text-align: center;
-//         }
-
-//         input {
-//             width: 100%;
-//             height: 40px;
-//             margin-bottom: 10px;
-//         }
-
-//         .menu-button {
-//             width: 100%;
-//             height: 40px;
-//         }
-//     }
-//   }
-  
-// }
-// MenuView.scss
 .MenuView {
   width: 100%;
   height: 156px;
@@ -100,9 +8,22 @@
   align-items: center;
   z-index: 12;
 
+  .language-selector {
+   
+    margin-right: 20px;
+  }
+
+  .language-selector select {
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      background-color: #fff;
+      cursor: pointer;
+  }
   .menu-right {
     position: absolute;
-    width: 50%;
+    width: 80%;
     height: 64px;
     display: flex;
     border-radius: 20px;
@@ -113,11 +34,17 @@
     font-weight: 400;
     font-size: 15px;
     color: white;
-
+    .logo{
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
     h1 {
-      font-size: 40px;
+      font-size: 25px;
       margin: 0;
+      padding: 0;
       margin-bottom: 5px;
+      
     }
 
     &.scrolled {
@@ -156,11 +83,15 @@
     .menu-items {
       display: flex;
       align-items: center;
-      width: 70%;
+      width: 60%;
       justify-content: space-between;
+      cursor: pointer;
     }
 
     @media (max-width: 768px) {
+      .menu-right{
+        width: 80%;
+      }
       .hamburger {
         display: flex;
       }
@@ -169,8 +100,8 @@
         position: fixed;
         top: 0;
         right: 0;
-        height: 100vh;
-        width: 300px;
+        height: 400px;
+        width: 200px;
         flex-direction: column;
         background-color: rgba(9, 11, 12, 0.9);
         padding-top: 3.5rem;
@@ -205,34 +136,51 @@
   }
 
   @media (max-width: 480px) {
-    .menu-right {
-      
+  .menu-right {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    justify-content: space-between;
+    background-color: none;
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .logo h1 {
+      display: none;
+    }
+
+    .page__link {
+      font-size: 14px;
+      margin: 5px 0;
+      text-align: center;
+    }
+
+    input {
       width: 100%;
-      height: auto;
-      padding: 10px;
-      border-radius: 0;
+      height: 40px;
+      margin-bottom: 10px;
+    }
 
-      h1 {
-        font-size: 24px;
-        margin-bottom: 10px;
-      }
-
-      .page__link {
-        font-size: 14px;
-        margin: 5px 0;
-        text-align: center;
-      }
-
-      input {
-        width: 100%;
-        height: 40px;
-        margin-bottom: 10px;
-      }
-
-      .menu-button {
-        width: 100%;
-        height: 40px;
-      }
+    .menu-button {
+      width: 100%;
+      height: 40px;
     }
   }
+
+  .menu-right.scrolled {
+    position: fixed;
+    top: 0;
+   
+    border: none;
+    box-shadow: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: transparent;
+  }
+}
+
 }

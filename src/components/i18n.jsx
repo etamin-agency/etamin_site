@@ -1,25 +1,38 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import HttpBackend from 'i18next-http-backend';
-import LanguageDetector from 'i18next-browser-languagedetector';
+import LanguageDetector from 'i18next-browser-languagedetector'; // Import the language detector
+import Backend from 'i18next-http-backend'; // Optional, for loading translations from a server
+import translationEN from './locales/en.json';
+import translationRU from './locales/ru.json';
+import translationUZ from './locales/uz.json';
+
+const resources = {
+  en: {
+    translation: translationEN
+  },
+  ru: {
+    translation: translationRU
+  },
+  uz: {
+    translation: translationUZ
+  }
+};
 
 i18n
-  .use(HttpBackend) // load translations using http
-  .use(LanguageDetector) // detect user language
-  .use(initReactI18next) // pass the i18n instance to react-i18next
+  .use(Backend) // Optional: load translations using http (default public/assets/locals)
+  .use(LanguageDetector) // Use the language detector
+  .use(initReactI18next) // Bind i18n to react-i18next
   .init({
-    fallbackLng: 'en', // use en if detected lng is not available
-    debug: true, // enable debug output to console
-    backend: {
-      loadPath: '/locales/{{lng}}/translation.json', // path to load translations
-    },
+    resources,
+    fallbackLng: 'en', // Default language if the detected language is not available
     detection: {
-      order: ['queryString', 'cookie'],
-      cache: ['cookie'],
+      // Language detection options
+      order: ['querystring', 'cookie', 'localStorage', 'navigator', 'htmlTag', 'path', 'subdomain'],
+      caches: ['localStorage', 'cookie'], // Cache user language in cookies or localStorage
     },
     interpolation: {
-      escapeValue: false, // react already safes from xss
-    },
+      escapeValue: false // React already escapes values to prevent XSS
+    }
   });
 
 export default i18n;

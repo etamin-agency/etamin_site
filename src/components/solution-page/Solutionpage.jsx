@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Slider from 'react-slick';
-import mack from '../../assets/img/mack.png';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
+import { useTranslation } from 'react-i18next';
 import Search from '../../assets/img/solution/Search.png'
 import Branding from '../../assets/img/solution/Branding.png'
 import Cloud from '../../assets/img/solution/Search.png'
@@ -17,71 +14,52 @@ import Media from '../../assets/img/solution/Media.png'
 import './SolutionPage.scss';
 
 const Solution = () => {
-    // var settings = {
-    //     infinite: true,
-    //     slidesToShow: 5,
-    //     slidesToScroll: 1,
-    //     autoplay: true,
-    //     autoplaySpeed: 1000, 
-    //     arrows: false,
-        
-    // };
-
+    
+    const { t } = useTranslation();
     return (
         <div className="SolutionPage">
            <div className='Solution-text'>
-                <h1>How we can help you ?</h1>
-                <h2>
-                Using powerful, industry-specific software solutions, our team can help you achieve your business goals. 
-                </h2>
+            <h1>{t('solution_title')}</h1>
+            <h2>{t('solution_subtitle')}</h2>
            </div>
           
            <div className='Solution-item'>
-                <div className='Solution-items'>
-                    <img src={Search} alt=''/>
-                    <p>SEO and Search Engine Optimization</p>
-                    
-                </div>
-                <div className='Solution-items'>
-                    <img src={Media} alt=''/>
-                    <p>Content Creation and Marketing</p>
-                    
-                </div>
-                <div className='Solution-items'>
-                    <img src={Data} alt=''/>
-                    <p>Social Media Management</p>
-                    
-                </div>
-                <div className='Solution-items'>
-                    <img src={Design} alt=''/>
-                    <p>Data Analytics and Business Intelligence</p>
-                    
-                </div>
-                <div className='Solution-items'>
-                    <img src={Digital} alt=''/>
-                    <p>Digital Advertising and PPC Management</p>
-                    
-                </div>
-                <div className='Solution-items'>
-                    <img src={Content} alt=''/>
-                    <p>Email Marketing Campaigns</p>
-                    
-                </div>
-                <div className='Solution-items'>
-                    <img src={Email} alt=''/>
-                    <p>Branding and Graphic Design</p>
-                    
-                </div>
-                <div className='Solution-items'>
-                    <img src={Media} alt=''/>
-                    <p>UX/UI Design</p>
-                    
-                </div>
-                <div className='Solution-items'>
-                    <img src={Branding} alt=''/>
-                    <p>Cloud Solutions and Storage</p>
-                    
-                </div>
+           <div className='Solution-items'>
+                <img src={Search} alt={t('solution_1')}/>
+                <p>{t('solution_1')}</p>
+            </div>
+            <div className='Solution-items'>
+                <img src={Media} alt={t('solution_2')}/>
+                <p>{t('solution_2')}</p>
+            </div>
+            <div className='Solution-items'>
+                <img src={Data} alt={t('solution_3')}/>
+                <p>{t('solution_3')}</p>
+            </div>
+            <div className='Solution-items'>
+                <img src={Design} alt={t('solution_4')}/>
+                <p>{t('solution_4')}</p>
+            </div>
+            <div className='Solution-items'>
+                <img src={Digital} alt={t('solution_5')}/>
+                <p>{t('solution_5')}</p>
+            </div>
+            <div className='Solution-items'>
+                <img src={Content} alt={t('solution_6')}/>
+                <p>{t('solution_6')}</p>
+            </div>
+            <div className='Solution-items'>
+                <img src={Email} alt={t('solution_7')}/>
+                <p>{t('solution_7')}</p>
+            </div>
+            <div className='Solution-items'>
+                <img src={Media} alt={t('solution_8')}/>
+                <p>{t('solution_8')}</p>
+            </div>
+            <div className='Solution-items'>
+                <img src={Branding} alt={t('solution_9')}/>
+                <p>{t('solution_9')}</p>
+            </div>
            </div>
            
            

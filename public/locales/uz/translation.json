@@ -1,10 +1,117 @@
-
 {
-  "about": {
-      "altText": "imagen después del trabajo",
-      "text": "Toda gran empresa necesita agradecer no solo a sí misma, sino también a quienes han estado a su lado y han creído en ella. Después de todo, el principio más importante en nuestro trabajo es la confianza. La confianza no solo asegura la lealtad de los clientes y socios, sino que también aumenta nuestra exigencia para con nosotros mismos. Cooperamos sobre la base de relaciones construidas sobre tradiciones humanas milenarias.",
-      "employee": "Empleado",
-      "project": "Proyecto",
-      "clients": "Clientes"
-  }
+  "home": "Bosh sahifa",
+  "services": "Xizmatlarimiz",
+  "testimonial": "Guvohlik",
+  "about": "Biz haqimizda",
+  "contact": "Aloqa",
+  "brand": "Etamin",
+  "companyName": "ETAMIN IT SOLUTIONS",
+  "sloganPart1": "ORZULAR",
+  "sloganPart2": "HAQIQATGA AYLANADI",
+  "solution_title": "Qanday yordam bera olishimiz mumkin?",
+  "solution_subtitle": "Kuchli, sanoatga xos dasturiy yechimlarni ishlatib, bizning jamoa sizning biznes maqsadlaringizga erishishingizga yordam beradi.",
+  "solution_1": "SEO va qidiruv tizimini optimallashtirish",
+  "solution_2": "Kontent yaratish va marketing",
+  "solution_3": "Ijtimoiy media boshqaruvi",
+  "solution_4": "Ma'lumotlarni tahlil qilish va biznes razvedkasi",
+  "solution_5": "Raqamli reklama va PPC boshqaruvi",
+  "solution_6": "Email marketing kampaniyalari",
+  "solution_7": "Brending va grafik dizayn",
+  "solution_8": "UX/UI Dizayn",
+  "solution_9": "Bulutli yechimlar va saqlash",
+  "about_title": "BIZ HAQIMIZDA",
+  "about_description": "Biz turli sohalarda kuchli raqamli yechimlarni yaratamiz, yuqori ijodiy va fidoyi mutaxassislar jamoasi bilan.",
+  "about_company_title": "ETAMIN IT SOLUTIONS",
+  "about_company_description_1": "Etamin IT Solutions innovatsion texnologik yechimlarni taqdim etishga bag'ishlangan yetakchi IT kompaniyasi. Biz tashkil topganimizdan beri mijozlarimizning texnologik ehtiyojlarini qondirish va biznes jarayonlarini yuqori sifatli xizmatlar bilan yaxshilashga e'tibor qaratmoqdamiz.",
+  "about_company_description_2": "Bizning maqsadimiz so'nggi sanoat texnologiyalari va tendentsiyalarini qo'llab-quvvatlash orqali samarali va ishonchli yechimlar taqdim etishdir. Tajribali mutaxassislar jamoamiz har bir loyihaga shaxsiy yondashishga sodiq bo'lib, xizmat ko'rsatish va mukammallikning eng yuqori standartlarini ta'minlaydi.",
+  "about_company_description_3": "Etamin IT Solutionsda biz sizning noyob ehtiyojlaringizni tushunishga va ajoyib natijalarni taqdim etishga ustuvor ahamiyat beramiz. Biz sizni biz bilan tanishishga taklif qilamiz va sizning biznesingizni rivojlantirish uchun hamkorlik qilishni sabrsizlik bilan kutamiz.",
+  "contact_title": "Biz bilan Bog'lanish",
+  "contact_description": "Ko'pgina taqvimlar jamoalar uchun mo'ljallangan. Slate mustaqil ishchilar uchun mo'ljallangan",
+  "contact_form_name": "Ismingiz",
+  "contact_form_email": "Emailingiz",
+  "contact_form_message": "Xabaringiz",
+  "contact_form_button": "Yuborish",
+  "footer_pages": "Sahifalar",
+  "footer_address": "Amir Temur ko'chasi, 4A, Namangan viloyati, O'zbekiston",
+  "footer_phone": "(20) 000 85 88",
+  "footer_email": "info@etamin.agency",
+  "testimonials_title": "Innovatsion fikr yuritish, dizayn va ijro",
+  "testimonials_subtitle": "Bir joyda.",
+  "step_ideate": "G'oya",
+  "step_ideate_description": "Mukammal g'oyani tasavvur qilish va ilovaning funksionalligi bilan foydalanuvchi samaradorligini bog'lash uchun maxsus strategiyalar ishlab chiqish.",
+  "step_design": "Dizayn",
+  "step_design_description": "Strategik rejalardan intuitiv va ta'sirli dizayn ramkalariga va WBSga o'tkazish.",
+  "step_develop": "Rivojlantirish",
+  "step_develop_description": "Aniqlik bilan yechimlarni muhandislik qilish, fikr-mulohazalarga tez moslashish orqali eng yuqori qoniqishni ta'minlash.",
+  "step_test": "Sinov",
+  "step_test_description": "Mukammal g'oyani tasavvur qilish va ilovaning funksionalligi bilan foydalanuvchi samaradorligini bog'lash uchun maxsus strategiyalar ishlab chiqish.",
+  "step_launch": "Ishga tushirish",
+  "step_launch_description": "So'nggi taqsimotni rejalashtirish va bajarish, foydalanuvchilarni muvaffaqiyatli va silliq chiqarilish bilan xursand qilish.",
+  "step_support": "Qo'llab-quvvatlash",
+  "step_support_description": "O'zgaruvchan ehtiyojlarga asoslangan keng qamrovli doimiy yordam va doimiy yaxshilanishlarni ta'minlash.",
+  "view_more": "Ko'proq",
+  
+    "product": {
+      "title": "Qo'lingiz ostida",
+      "main_title": "BIZNING XIZMATLARIMIZ",
+      "items": [
+        {
+          "title": "Veb Ilovalarni Rivojlantirish",
+          "subtitle": "Veb Ilovalarni Rivojlantirish",
+          "description": "Bizning veb ilovalarni rivojlantirish bo'yicha mutaxassislarimiz zamonaviy va funksional veb-saytlar yaratib, biznesingiz onlayn maydonda rivojlanishini ta'minlaydilar. Biz turli sohalar uchun moslashuvchan va ko'p funktsiyali platformalar ishlab chiqamiz."
+        },
+        {
+          "title": "Mobil Ilovalarni Rivojlantirish",
+          "subtitle": "Mobil Ilovalarni Rivojlantirish",
+          "description": "Biz iOS va Android platformalari uchun yuqori sifatli va intuitiv mobil ilovalar yaratamiz. Mobil ilovalarimiz mijozlarimizning maxsus ehtiyojlariga javob berish uchun eng yangi texnologiyalar yordamida ishlab chiqilgan."
+        },
+        {
+          "title": "Desktop Ilovalarni Rivojlantirish",
+          "subtitle": "Desktop Ilovalarni Rivojlantirish",
+          "description": "Bizning desktop ilovalarni yaratish bo'yicha keng tajribamiz tufayli yechimlarimiz samaradorlikni oshiradi va biznes jarayonlarini avtomatlashtiradi. Bizning ilovalarimiz ishonchli va aniq biznes talablari asosida moslashtirilgan."
+        },
+        {
+          "title": "Ma'lumotlar Bazasini Boshqarish va Integratsiya",
+          "subtitle": "Ma'lumotlar Bazasini Boshqarish va Integratsiya",
+          "description": "Biz katta hajmdagi ma'lumotlarni boshqarish uchun mustahkam ma'lumotlar bazalarini loyihalash va integratsiya qilamiz. Ma'lumotlar xavfsizligi va samaradorligini ta'minlash bizning ustuvor vazifamizdir."
+        },
+        {
+          "title": "API va Xizmatlarni Rivojlantirish",
+          "subtitle": "API va Xizmatlarni Rivojlantirish",
+          "description": "Bizning API rivojlantirish xizmatlarimiz ilovalaringiz o'rtasida samarali muloqotni ta'minlaydi. Ochiq va xavfsiz API interfeyslarini taqdim etib, biz turli tizimlarning uzluksiz integratsiyasini ta'minlaymiz."
+        },
+        {
+          "title": "ERP Tizimlari",
+          "subtitle": "Rivojlantirish",
+          "description": "Biz biznes jarayonlarini boshqarish va optimallashtirish uchun keng qamrovli ERP tizimlarini ishlab chiqamiz. ERP yechimlarimiz moliya, ishlab chiqarish, logistika va boshqa jarayonlarni yagona tizimga integratsiyalaydi."
+        },
+        {
+          "title": "CRM Tizimlari",
+          "subtitle": "Rivojlantirish",
+          "description": "Biz mijozlar bilan munosabatlarni samarali boshqarish uchun zamonaviy CRM tizimlarini taklif qilamiz. Bizning yechimlarimiz mijozlar ma'lumotlarini yig'ish, tahlil qilish va undan foydalanishni soddalashtiradi, mijozlar bilan aloqani yaxshilash va qoniqish darajasini oshirish uchun."
+        },
+        {
+          "title": "Elektron Savdo",
+          "subtitle": "Elektron Savdo",
+          "description": "Onlayn do'konlar va elektron savdo platformalarini yaratish bo'yicha keng tajribamiz bilan, biz mijozlarga qulay va xavfsiz xarid qilish tajribasini taqdim etamiz. Biz foydalanuvchilar uchun qulay interfeyslar va uzluksiz tranzaksiyalarga e'tibor qaratamiz."
+        },
+        {
+          "title": "Bulutli Xizmatlar va Infratuzilma",
+          "subtitle": "Bulutli Xizmatlar va Infratuzilma",
+          "description": "Biz biznesingiz uchun moslashuvchanlik va kengaytirilish imkonini beradigan bulutli yechimlar va infratuzilma xizmatlarini taqdim etamiz. Bizning bulutli xizmatlarimiz xavfsizlik va ishonchlilikni ta'minlab, o'zgaruvchan biznes ehtiyojlariga moslashishingizga yordam beradi."
+        },
+        {
+          "title": "LMS Rivojlantirish",
+          "subtitle": "LMS Rivojlantirish",
+          "description": "Biz onlayn ta'lim va treninglarni samarali amalga oshirishga yordam beradigan zamonaviy ta'lim boshqaruvi tizimlarini (LMS) yaratamiz. Bizning LMS yechimlarimiz kurslarni boshqarish uchun to'liq vositalarni taqdim etadi."
+        },
+        {
+          "title": "Kiberxavfsizlik",
+          "subtitle": "Kiberxavfsizlik",
+          "description": "Bizning kiberxavfsizlik bo'yicha xizmatlarimiz tizimlaringiz va ma'lumotlaringizni himoya qilish uchun kompleks yechimlarni taklif qiladi. Bizning xavfsizlik bo'yicha mutaxassislarimiz hujumlarga qarshi himoya qilish va tashkilotingizning umumiy xavfsizlik darajasini oshirishga yordam beradi."
+        }
+      ]
+    }
+  
+  
 }

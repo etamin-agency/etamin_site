@@ -332,3 +332,25 @@
     padding: 0;
   }
 }
+@media (max-width: 480px){
+  .main-child {
+    width: 90%;
+    height: 450px;
+    color: white;
+    display: flex;
+    
+    justify-content: center;
+    margin-left: 30px;
+    margin-top: 80px;
+    text-align: center;
+    h1{
+      text-align: start;
+    }
+    p{
+      text-align: start;
+    }
+    h2{
+      text-align: start;
+    }
+  }
+}

@@ -1,10 +1,118 @@
-
 {
-  "about": {
-      "altText": "after work image",
-      "text": "Every big company needs to thank not only itself, but also those who have stood beside it and believed in it. After all, the most important principle in our work is trust. Trust not only ensures the loyalty of customers and partners, but also increases our demand for ourselves. We cooperate on the basis of relations built on thousand-year human traditions.",
-      "employee": "Employee",
-      "project": "Project",
-      "clients": "Clients"
-  }
+  "home": "Home",
+  "services": "Our Services",
+  "testimonial": "Testimonial",
+  "about": "About",
+  "contact": "Contact",
+  "brand": "Etamin",
+  "companyName": "ETAMIN IT SOLUTIONS",
+  "sloganPart1": "WHERE DREAMS",
+  "sloganPart2": "COME TO REALITY",
+  "solution_title": "How we can help you?",
+  "solution_subtitle": "Using powerful, industry-specific software solutions, our team can help you achieve your business goals.",
+  "solution_1": "SEO and Search Engine Optimization",
+  "solution_2": "Content Creation and Marketing",
+  "solution_3": "Social Media Management",
+  "solution_4": "Data Analytics and Business Intelligence",
+  "solution_5": "Digital Advertising and PPC Management",
+  "solution_6": "Email Marketing Campaigns",
+  "solution_7": "Branding and Graphic Design",
+  "solution_8": "UX/UI Design",
+  "solution_9": "Cloud Solutions and Storage",
+  "about_title": "ABOUT US",
+  "about_description": "We build robust digital solutions across industries with a highly creative and dedicated team of professionals.",
+  "about_company_title": "ETAMIN IT SOLUTIONS",
+  "about_company_description_1": "Etamin IT Solutions is a leading IT company dedicated to delivering innovative technology solutions. Since our founding, we have been focused on addressing our clients' technological needs and enhancing business processes with top-quality services.",
+  "about_company_description_2": "Our mission is to provide effective and reliable solutions by leveraging the latest industry technologies and trends. Our team of experienced professionals is committed to a personalized approach to every project, ensuring the highest standards of service and excellence.",
+  "about_company_description_3": "At Etamin IT Solutions, we prioritize understanding your unique needs and delivering exceptional results. We invite you to learn more about us and look forward to collaborating with you to drive your business forward.",
+  "contact_title": "Contact Us",
+  "contact_description": "Most calendars are designed for teams. Slate is designed for freelancers",
+  "contact_form_name": "Your Name",
+  "contact_form_email": "Your Email",
+  "contact_form_message": "Your Message",
+  "contact_form_button": "Send",
+  "footer_pages": "Pages",
+  "footer_address": "4A, Amir Temur Street, Namangan region, Uzbekistan",
+  "footer_phone": "(20) 000 85 88",
+  "footer_email": "info@etamin.agency",
+  "testimonials_title": "Innovative Ideation, Design, And Execution In",
+  "testimonials_subtitle": "One Place.",
+  "step_ideate": "Ideate",
+  "step_ideate_description": "Envisioning the perfect idea & crafting tailored strategies to bridge app functionality with user efficiency.",
+  "step_design": "Design",
+  "step_design_description": "Translating strategic blueprints into intuitive and impactful design frameworks and WBS.",
+  "step_develop": "Develop",
+  "step_develop_description": "Engineering solutions with precision, adapting swiftly to feedback for peak satisfaction.",
+  "step_test": "Test",
+  "step_test_description": "Envisioning the perfect idea & crafting tailored strategies to bridge app functionality with user efficiency.",
+  "step_launch": "Launch",
+  "step_launch_description": "Planning and executing the final deployment, thrilling users with a successful, seamless rollout.",
+  "step_support": "Support",
+  "step_support_description": "Providing comprehensive ongoing assistance and continuous enhancements based on evolving needs.",
+  "view_more": "View More",
+  
+    "product": {
+      "title": "At your fingertips",
+      "main_title": "OUR SERVICES",
+      "items": [
+        {
+          "title": "Web Application Development",
+          "subtitle": "Web Application Development",
+          "description": "Our web application development experts create modern and functional websites to ensure your business thrives in the online space. We develop flexible and multi-functional platforms tailored to various industries."
+        },
+        {
+          "title": "Mobile App Development",
+          "subtitle": "Mobile App Development",
+          "description": "We build high-quality and intuitive mobile apps for both IOS and Android platforms. Our mobile applications are designed and developed using the latest technologies to meet the specific needs of our clients."
+        },
+        {
+          "title": "Desktop Application Development",
+          "subtitle": "Desktop Application Development",
+          "description": "With extensive experience in creating desktop applications, our solutions help enhance productivity and automate business processes. Our applications are reliable and tailored to meet specific business requirements."
+        },
+        {
+          "title": "Database Management and Integration",
+          "subtitle": "Database Management and Integration",
+          "description": "We design and integrate robust databases to facilitate the management of large volumes of data. Ensuring data security and efficiency in data management is our priority."
+        },
+        {
+          "title": "API and Services Development",
+          "subtitle": "API and Services Development",
+          "description": "Our API development services ensure effective communication between your applications. By providing open and secure API interfaces, we enable seamless integration of various systems."
+        },
+        {
+          "title": "ERP Systems",
+          "subtitle": "Development",
+          "description": "We develop comprehensive ERP systems to help manage and optimize your business operations. Our ERP solutions integrate financials, manufacturing, logistics, and other processes into a unified system."
+        },
+        {
+          "title": "CRM Systems",
+          "subtitle": "Development",
+          "description": "We offer advanced CRM systems to efficiently manage customer relationships. Our solutions simplify the collection, analysis, and utilization of customer data to enhance client engagement and satisfaction."
+        },
+        {
+          "title": "E-commerce",
+          "subtitle": "E-commerce",
+          "description": "With extensive experience in creating online stores and e-commerce platforms, our solutions provide customers with convenient and secure shopping experiences. We focus on user-friendly interfaces and seamless transactions."
+        },
+        {
+          "title": "Cloud Services and Infrastructure",
+          "subtitle": "Cloud Services and Infrastructure",
+          "description": "We provide cloud solutions and infrastructure services that offer flexibility and scalability for your business. Our cloud services ensure security and reliability, helping you adapt to changing business needs."
+        },
+        {
+          "title": "LMS Development",
+          "subtitle": "LMS Development",
+          "description": "We create advanced Learning Management Systems (LMS) that facilitate effective online education and training. Our LMS solutions provide comprehensive tools for course management."
+        },
+        {
+          "title": "Cybersecurity",
+          "subtitle": "Cybersecurity",
+          "description": "Our cybersecurity services offer comprehensive solutions to protect your systems and data. Our security experts help safeguard against attacks and enhance the overall security posture of your organization."
+        }
+      ]
+    }
+  
+  
 }
+

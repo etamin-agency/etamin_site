@@ -7,14 +7,15 @@
   padding: 100px 0;
   background-color: #27173A;
   margin: auto;
+  margin-top: 100px;
 
     
 
   .testimonial-text {
-      width: 100%;
+      width: 65%;
       height: auto;
       text-align: left;
-      padding-left: 150px;
+      margin: auto;
 
       p {
           font-weight: 600;
@@ -22,6 +23,7 @@
           color: #af69ff;
           font-family: Roboto;
           display: inline;
+          margin-left: 15px;
       }
 
       h1 {
@@ -40,7 +42,7 @@
       justify-content: center;
       align-items: center;
       padding: 10px 0;
-      margin-top: 100px;
+      margin-top: 120px;
 
       .testimonial-right {
           width: 800px;
@@ -151,5 +153,110 @@
         }
     }
     
+  }
+  @media (max-width: 480px){
+    .testimonial-text {
+        width: 90%;
+        height: auto;
+        text-align: start;
+        padding-left: 20px;
+  
+        p {
+            font-weight: 600;
+            font-size: 35px;
+            color: #af69ff;
+            font-family: Roboto;
+            display: inline;
+            margin-left: 5px;
+        }
+  
+        h1 {
+            font-size: 35px;
+            font-weight: 600;
+            color: white;
+            display: inline;
+        }
+    }
+    .testimonial-wrapper{
+        gap: 90px;
+        
+        .testimonial-right{
+            .testimonial-item {
+                width: 350px;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: start;
+                  gap: 25px;
+    
+                  h4 {
+                      color: white;
+                      font-size: 22px;
+                      font-weight: 500;
+                  }
+    
+                  h2 {
+                      color: #af69ff;
+                      font-size: 38px;
+                      font-weight: 600;
+                  }
+    
+                  p {
+                      color: white;
+                      font-size: 20px;
+                  }
+    
+                  button {
+                      width: 200px;
+                      height: 60px;
+                      background-color: #27173A;
+                      border: none;
+                      padding-left: 10px;
+                      color: white;
+                      font-size: 20px;
+                      text-align: left;
+                      display: flex;
+                      align-items: center;
+                      gap: 15px;
+    
+                      span {
+                          font-size: xx-large;
+                      }
+                  }
+                  button:hover{
+                    span{
+                        color: #af69ff;
+                       
+                    }
+                    
+                  }
+              }
+        }
+        .testimonial-imgs {
+            width: 350px;
+            height: 600px;
+            padding: 20px;
+            overflow: hidden;
+            position: relative;
+            margin-left: 30px;
+        
+            img {
+                width: 350px;
+                height: 550px;
+                border-radius: 200px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                transition: opacity 0.5s ease-in-out, transform 0.4s ease-in-out;
+                transform: scale(1.1);
+            }
+        
+            img.active {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+    }
   }
 }

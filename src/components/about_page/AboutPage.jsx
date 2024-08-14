@@ -1,28 +1,28 @@
-import './AboutPage.scss'
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import './AboutPage.scss';
+import Squid_img from "../../assets/img/oktopus.png";
 
-import Squid_img from "../../assets/img/oktopus.png"
+const AboutPage = () => {
+    const { t } = useTranslation();
 
-const Solution = () => {
-
-    return(
+    return (
         <div className="AboutPage">
             <div className='About-text'>
-                <h1>ABOUT US</h1>
-                <p>We build robust digital solutions across industries with a highly creative and<br/>
-                dedicated team of professionals.</p>
+                <h1>{t('about_title')}</h1>
+                <p>{t('about_description')}</p>
             </div>
             <div className='About-wrapper'>
                 <div className='About-wrapper-text'>
-                <h1>ETAMIN IT SOLUTIONS</h1>
-                    <p>
-                    Etamin IT Solutions is a leading IT company dedicated to delivering innovative technology solutions. Since our founding, we have been focused on addressing our clients' technological needs and enhancing business processes with top-quality services.</p>
-                    <p>Our mission is to provide effective and reliable solutions by leveraging the latest industry technologies and trends. Our team of experienced professionals is committed to a personalized approach to every project, ensuring the highest standards of service and excellence.</p>
-                    <p>At Etamin IT Solutions, we prioritize understanding your unique needs and delivering exceptional results. We invite you to learn more about us and look forward to collaborating with you to drive your business forward.</p>
+                    <h1>{t('about_company_title')}</h1>
+                    <p>{t('about_company_description_1')}</p>
+                    <p>{t('about_company_description_2')}</p>
+                    <p>{t('about_company_description_3')}</p>
                 </div>
-                <img src={Squid_img} alt='Squid'/>
+                <img src={Squid_img} alt={t('about_company_title')} />
             </div>
         </div>
-        
     );
-}
-export default Solution;
+};
+
+export default AboutPage;

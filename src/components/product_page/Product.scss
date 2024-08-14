@@ -147,6 +147,9 @@
       font-family: 'Source Sans 3', sans-serif;
       z-index: 2; /* Ensure content is above overlay */
       transition: color 1s; /* Smooth color transition */
+      p{
+        height: auto;
+      }
     }
     
     .product-item:hover .content {
@@ -158,7 +161,7 @@
       font-size: 27px;
       font-weight: 600;
       line-height: 30px;
-      transform: translateY(-100px); /* Default position */
+      transform: translateY(-120px); /* Default position */
       transition: transform 0.5s; /* Smooth transform transition */
     }
     
@@ -178,7 +181,7 @@
     
     .content p {
       line-height: 20px;
-      font-size: 15px;
+      font-size: 17px;
       margin: 0; /* Remove default margins for smooth animation */
       transform: translateY(0); /* Default position */
       transition: transform 1s; /* Smooth transform transition */
