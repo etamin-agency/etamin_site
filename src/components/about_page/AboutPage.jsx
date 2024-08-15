@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
 import './AboutPage.scss';
 import Squid_img from "../../assets/img/oktopus.png";
@@ -8,6 +9,11 @@ const AboutPage = () => {
 
     return (
         <div className="AboutPage">
+            <Helmet>
+            <title>ABOUT US</title>
+            <meta name="description" content="We build robust digital solutions across industries with a highly creative and dedicated team of professionals" />
+            <meta name="keywords" content="Etamin, IT solutions, modern web sites, web applications, mobile applications, AR/VR, robotics, automations, Uzbekistan, Tashkent" />
+            </Helmet>
             <div className='About-text'>
                 <h1>{t('about_title')}</h1>
                 <p>{t('about_description')}</p>

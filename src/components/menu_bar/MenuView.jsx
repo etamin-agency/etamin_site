@@ -30,12 +30,7 @@ const MenuView = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
-    // const handleLanguageChange = (event) => {
-    //     const newLang = event.target.value;
-    //     i18n.changeLanguage(newLang);
-    //     setSelectedLanguage(newLang);
-    // };
-
+    
     return (
         <div className='MenuView'>
             <div className={`menu-right ${isScrolled ? 'scrolled' : ''} ${isMenuOpen ? 'open' : ''}`}>
@@ -56,13 +51,7 @@ const MenuView = () => {
                     <Link to="about_page" smooth={true} duration={500} className="page__link">{t('about')}</Link>
                     <Link to="values" smooth={true} duration={500} className="page__link">{t('contact')}</Link>
                 </div>
-                {/* <div className="language-selector">
-                    <select value={selectedLanguage} onChange={handleLanguageChange}>
-                        <option value="en">EN</option>
-                        <option value="ru">RU</option>
-                        <option value="uz">UZ</option>
-                    </select>
-                </div> */}
+                
             </div>
         </div>
     );

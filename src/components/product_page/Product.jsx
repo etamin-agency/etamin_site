@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
 import slide1 from "../../assets/img/servic/slide1.png";
 import slide2 from "../../assets/img/servic/slide2.png";
@@ -23,6 +24,11 @@ const ProductBlock = () => {
 
   return (
     <div className="ProductBlock">
+        <Helmet>
+          <title>Etamin - Our Services</title>
+          <meta name="description" content="Discover the comprehensive range of services offered by Etamin, including modern web sites, web applications, mobile applications, AR/VR solutions, robotics, and automations." />
+          <meta name="keywords" content="Etamin, IT solutions, modern web sites, web applications, mobile applications, AR/VR, robotics, automations, Uzbekistan, Tashkent" />
+        </Helmet>
       <div className='Product-title'>
         <h2>{t('product.title')}</h2>
         <h1>{t('product.main_title')}</h1>

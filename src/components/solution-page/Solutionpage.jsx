@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
 import Search from '../../assets/img/solution/Search.png'
 import Branding from '../../assets/img/solution/Branding.png'
@@ -18,6 +18,11 @@ const Solution = () => {
     const { t } = useTranslation();
     return (
         <div className="SolutionPage">
+            <Helmet>
+            <title>Solution</title>
+            <meta name="description" content="Using powerful, industry-specific software solutions, our team can help you achieve your business goals." />
+            <meta name="keywords" content="Etamin, IT solutions, modern web sites, web applications, mobile applications, AR/VR, robotics, automations, Uzbekistan, Tashkent" />
+            </Helmet>
            <div className='Solution-text'>
             <h1>{t('solution_title')}</h1>
             <h2>{t('solution_subtitle')}</h2>
