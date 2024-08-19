@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet-async";
 import { useTranslation } from 'react-i18next';
 import Search from '../../assets/img/solution/Search.png'
 import Branding from '../../assets/img/solution/Branding.png'
